@@ -1,31 +1,34 @@
-## ⚖️ LexBrief
 
-AI-Powered Legal Document Summarizer
+## ⚖️ LexBrief — AI Legal Document Summarizer
 
-LexBrief is an intelligent tool that simplifies complex legal documents into concise, readable summaries. Built for lawyers, students, and researchers, it helps save time while maintaining accuracy and context.
+LexBrief turns long, dense legal documents into concise, accurate summaries while preserving essential context and legal tone. It's aimed at lawyers, paralegals, law students, and researchers who need to quickly understand the contents of contracts, case files, and other legal texts.
 
-⸻
+---
 
-🚀 Features
-	•	🧠 AI Summarization – Extracts key points from lengthy contracts, case files, and agreements.
-	•	📄 Multi-Format Support – Handles PDFs, DOCX, and plain text files.
-	•	🔍 Context Preservation – Maintains legal tone and structure while shortening content.
-	•	💬 Custom Summary Length – Choose between brief, standard, or detailed summaries.
-	•	🌐 Web Interface – Easily upload and summarize documents online.
+Highlights
 
-⸻
+- AI-powered summarization tailored for legal language
+- Supports common document formats (PDF, DOCX, TXT)
+- Adjustable summary length and level of detail
+- Focus on preserving legal context and key clauses
 
-💡 Future Improvements
-	•	🗂️ Batch document processing
-	•	📚 Legal reference integration
-	•	🌍 Multi-language support
-	•	🧾 Export summarized reports (PDF/Word)
+---
 
-⸻
+How it works (high level)
 
-🤝 Contributing
+- Input: a legal document (PDF, DOCX, TXT).
+- Preprocessing: text extraction and basic cleaning (remove boilerplate, preserve headings/clauses).
+- Summarization: AI model identifies and extracts the most relevant clauses, facts, and outcomes.
+- Output: human-readable summary with optional highlights for key clauses and recommended follow-ups.
 
-Contributions are welcome!
-If you’d like to improve LexBrief, fork this repo and submit a pull request.
+---
 
-⸻
+Contributing
+
+Contributions are very welcome. A small guide to help contributors:
+
+1. Fork the repo and create a feature branch.
+2. Open a clear issue describing the bug or feature before sending a PR (optional but helpful).
+3. Add tests for new features where appropriate.
+4. Send a pull request with a clear description of the change.
+
