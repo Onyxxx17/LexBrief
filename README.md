@@ -1,0 +1,2 @@
+# LexBrief
+Legal Document Summarizer
