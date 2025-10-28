@@ -1,13 +1,13 @@
-require('dotenv').config();
-const express = require('express');
-const cors = require('cors');
-const helmet = require('helmet');
-const morgan = require('morgan');
-const rateLimit = require('express-rate-limit');
+import { configDotenv } from 'dotenv';
+import express, { json, urlencoded } from 'express';
+import cors from 'cors';
+import helmet from 'helmet';
+import morgan from 'morgan';
+import rateLimit from 'express-rate-limit';
 
 // Import routes
-const authRoutes = require('./src/routes/auth');
-const briefRoutes = require('./src/routes/briefs');
+// import authRoutes from './src/routes/auth';
+// import briefRoutes from './src/routes/briefs';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -28,8 +28,8 @@ const limiter = rateLimit({
 app.use('/api/', limiter);
 
 // Body parsing middleware
-app.use(express.json({ limit: '10mb' }));
-app.use(express.urlencoded({ extended: true }));
+app.use(json({ limit: '10mb' }));
+app.use(urlencoded({ extended: true }));
 
 // Logging
 app.use(morgan('combined'));
@@ -44,8 +44,8 @@ app.get('/health', (req, res) => {
 });
 
 // API routes
-app.use('/api/auth', authRoutes);
-app.use('/api/briefs', briefRoutes);
+// app.use('/api/auth', authRoutes);
+// app.use('/api/briefs', briefRoutes);
 
 // 404 handler
 app.use('*', (req, res) => {
